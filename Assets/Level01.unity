@@ -565,11 +565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.03
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.25
+      value: 24.2
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -609,11 +609,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 18.62036
+      value: 24.69249
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7218009
+      value: 0.7218014
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalScale.z
@@ -882,7 +882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.2
+      value: 36.24
       objectReference: {fileID: 0}
     - target: {fileID: 233072747, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1198,3 +1198,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048bc05e3a18486439ddce1ccfb5622f, type: 3}
+--- !u!1 &2023910013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233072743, guid: 048bc05e3a18486439ddce1ccfb5622f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044346219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2023910017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023910013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a769deb726a81b9429cc03df68122e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 10, y: 0, z: 0}
+  movementFactor: 0
