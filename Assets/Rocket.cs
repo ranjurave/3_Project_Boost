@@ -17,11 +17,7 @@ public class Rocket : MonoBehaviour {
     Rigidbody rigidBody;
     AudioSource audioSource;
 
-    enum State {
-        Alive
-    ,   Dying
-    ,   Transcending
-    }
+    enum State { Alive, Dying, Transcending }
     State state = State.Alive;
 
     // Use this for initialization
@@ -51,7 +47,6 @@ public class Rocket : MonoBehaviour {
         else
         {
             audioSource.Stop();
-            
             mainEngineParticles.Stop();
         }
     }
