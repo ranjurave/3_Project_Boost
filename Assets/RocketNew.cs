@@ -8,10 +8,12 @@ public class RocketNew : MonoBehaviour
     [SerializeField] float thrustPower = 40f;
     [SerializeField] float rotatePower = 150f;
     Rigidbody rigidBody;
-
+    [SerializeField] AudioClip mainEngine;
+    AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rigidBody = GetComponent<Rigidbody>();
     }
     
@@ -24,9 +26,15 @@ public class RocketNew : MonoBehaviour
 
     private void ThrustRocket()
     {
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             rigidBody.AddRelativeForce(Vector3.up * thrustPower);
+            audioSource.PlayOneShot(mainEngine);
+        }
+        else
+        {
+            //audioSource.Stop();
         }
     }
 

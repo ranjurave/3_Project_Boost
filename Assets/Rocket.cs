@@ -39,7 +39,7 @@ public class Rocket : MonoBehaviour {
 
     private void RespondToThrustInput()
     {
-        float rocketThrust = mainThrust * Time.deltaTime;
+        //float rocketThrust = mainThrust * Time.deltaTime;
         if (Input.GetKey(KeyCode.Space))
         {
             ApplyThrust();
