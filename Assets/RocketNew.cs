@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RocketNew : MonoBehaviour
 {
@@ -24,17 +23,32 @@ public class RocketNew : MonoBehaviour
         RotateRocket();
     }
 
-    private void ThrustRocket()
+    void OnCollisionEnter(Collision collision)
     {
-
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (collision.gameObject.tag == "Friendly")
         {
-            rigidBody.AddRelativeForce(Vector3.up * thrustPower);
-            audioSource.PlayOneShot(mainEngine);
+            SceneManager.LoadScene(0);
         }
         else
         {
-            //audioSource.Stop();
+            SceneManager.LoadScene(1);
+        }
+    }
+
+    private void ThrustRocket()
+    {
+        
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            rigidBody.AddRelativeForce(Vector3.up * thrustPower);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(mainEngine);
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
